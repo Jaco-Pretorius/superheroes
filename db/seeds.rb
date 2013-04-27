@@ -1,7 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Character.delete_all
+
+Character.create!(
+  name: 'Superman',
+  gender: 'Male',
+  powers: ['Superhuman Strength','Invulnerability','Flight']
+)
+Character.create!(
+  name: 'Hulk',
+  gender: 'Male',
+  powers: ['Transformation','Superhuman Strength','Regenerative Healing']
+)
+Character.create!(
+  name: 'Iron Man',
+  gender: 'Male',
+  powers: ['Industrial Genius']
+)
+Character.create!(
+  name: 'Hancock',
+  gender: 'Male',
+  powers: ['Flight','Superhuman Strength','Regenerative Healing']
+)
+Character.create!(
+  name: 'Mystique',
+  gender: 'Female',
+  powers: ['Molecular Manipulation','Superhuman Strength','Regenerative Healing']
+)
