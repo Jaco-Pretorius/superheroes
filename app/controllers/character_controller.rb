@@ -1,5 +1,5 @@
 class CharacterController < ApplicationController
   def index
-    render json: Character.all
+    @characters = Character.all
   end
 end
